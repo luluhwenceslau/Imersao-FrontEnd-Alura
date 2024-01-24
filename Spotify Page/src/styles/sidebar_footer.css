@@ -1,6 +1,7 @@
 
 body{
     background-color: #000;
+    font-family: var(--font-family);
 }
 
 h1{
@@ -26,6 +27,7 @@ h1{
     bottom: 0;
     padding: 12px;
     width: 300px;
+    margin-bottom: 20px;
 }
 
 .sidebar_nav{
@@ -53,7 +55,6 @@ h1{
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 1px;
     letter-spacing: 2px;
 }
@@ -71,7 +72,6 @@ h1{
     color: #b3b3b3;
     font-weight: 600;
     font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 1px;
     width: 85%;
 }
@@ -193,12 +193,47 @@ h1{
 }
 
 footer{
-    background: linear-gradient(180deg, #515B91, #5E627B);
-    max-width: 1500px;
-    width: 100%;
-    height: 30px;
-    color: #b3b3b3;
-    position: absolute;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #9b56ac, #0a1975);
     bottom: 0;
-    text-align: center;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    padding: 15px 15px;
+}
+
+.footer_button{
+    background: #fff;
+    color: #000;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 113px;
+    position: absolute;
+    right: 20px;
+}
+
+footer .text{
+    padding-bottom: 0;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+footer .title{
+    font-weight: 700;
+    font-size: 18px;
+    margin: 5px;
+}
+
+footer .subtitle{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 5px;
 }

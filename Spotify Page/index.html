@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/sidebar_footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
     <link rel="shortcu icon" href="./assets/icons/favicon.ico" type="img/icon">
     <title>Spotify Page</title>
 </head>
@@ -13,17 +15,17 @@
         <nav class="sidebar_nav">
             <div class="logo">
                 <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="logo do spotify">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="logo do spotify">
                 </a>
             </div>
             <div>
                 <ul>
                 <li><a href="">
-                    <img src="./assets/icons/home.png" alt="home icon" class="icon">
+                    <img src="./src/assets/icons/home.png" alt="home icon" class="icon">
                     <span>Início</span>
                 </a></li>
                 <li><a href="">
-                    <img src="./assets/icons/search.png" alt="home icon" class="icon">                        <span>Buscar</span>
+                    <img src="./src/assets/icons/search.png" alt="home icon" class="icon">                        <span>Buscar</span>
                 </a></li>
                 </ul>
             </div>
@@ -31,10 +33,10 @@
         <nav class="library">
             <div class="library_content">
                 <button class="library_button">
-                    <img src="./assets/icons/cubes.png" alt="library icon" class="library_icon">
+                    <img src="./src/assets/icons/cubes.png" alt="library icon" class="library_icon">
                     <span>Sua Biblioteca</span>
                 </button>
-                <span><img src="./assets/icons/plus.png" alt="plus icon" class="library_icon2"></span>
+                <span><img src="./src/assets/icons/plus.png" alt="plus icon" class="library_icon2"></span>
             </div>
             <section class="playlist">
                 <div class="playlist_content">
@@ -50,14 +52,52 @@
             </div>
             <div class="languages">
                 <button class="languages_button">
-                    <span><img src="./assets/icons/globe.png" alt="languages icon" class="icon"></span>
+                    <span><img src="./src/assets/icons/globe.png" alt="languages icon" class="icon"></span>
                     <span>Português</span>
                 </button>
             </div>
         </nav>
     </div>
+
+    <main>
+        <div class="main_container">
+            <nav class="header_nav">
+                <div class="navigation">
+                    <button class="arrow-left"><img src="./src/assets/icons/small-left.png" alt="left arrow"></button>
+                    <button class="arrow-left"><img src="./src/assets/icons/small-right.png" alt="right arrow"></button>
+                    <div class="header_search">
+                        <img src="./src/assets/icons/search.png" alt="">
+                        <input type="text" id="search_input" maxlength="500" placeholder="O que você quer ouvir??"/>
+                    </div>
+
+                </div>
+
+                <div class="header_login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+
+            <section class="content">
+                <div class="card one">
+                    <p>Mais Ouvidas</p>
+                </div>
+                <div class="card two">
+                    <p>Lançamentos Nacionais</p>
+                </div>
+                <div class="card three">
+                    <p>Lançamentos Internacionais</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
     <footer>
-    teste
+        <div class="text"></div>
+            <p class="text title">TESTE O PREMIUM DE GRAÇA</p>
+            <p class="text subtitle">Inscreva-se para curtir música ilimidata e podcasts</p>
+        </div>
+        <button class="footer_button">Inscreva-se Grátis</button>
     </footer>
     <link rel="script" href="./script.js">
 </body>
